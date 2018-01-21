@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  
+ <head>
+    <title>jQuery Tabs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+ </head>
+
+ <body>
+    <div class="accordeon">
+      <div><a  class="tab" href="#content-1">ссылка на контент 1</a></div>
+    <div id="content-1" class="content">
+        <p>контент 1</p>
+    </div>
+    <div><a  class="tab" href="#content-2">ссылка на контент 2</a></div>
+    <div id="content-2" class="content">
+        <p>контент 2</p>
+    </div>
+    <div><a  class="tab" href="#content-3">ссылка на контент 3</a></div>
+    <div id="content-3" class="content">
+        <p>контент 3</p>
+    </div>
+    <div><a  class="tab" href="#content-4">ссылка на контент 4</a></div>
+    <div id="content-4" class="content">
+        <p>контент 4</p>
+    </div>  
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script>
+    	$(document).ready(function () {
+    	    var tab = $('.tab');
+
+    	    tab.click(function(){
+               var target = $(this).attr('href');
+               console.log('Эта ссылка ведет на '+ target);
+               $('.content').hide();
+               $(target).show();
+    	    });
+    	});
+    </script>
+</body>
+</html>			

@@ -1,0 +1,41 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.tabs-pannel{
+	background-color: #EBEBEB;
+	width: 640px;
+	height: 400px;
+	padding: 10px;
+	margin:10px;
+
+}
+.tab{
+	border:1px solid #b2c4d4;
+	display: block;
+	width: 200px;
+	text-align: center;
+	background-color: white;
+	height: 40px;
+	line-height: 40px;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	margin-bottom: 5px;
+	&:hover{
+		cursor:pointer;
+	}
+	a{
+		text-decoration: none;
+	}
+}
+.content{
+	height: 50px;
+	-webkit-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	display: none;
+}
+.content-1{
+	display: block;
+}
